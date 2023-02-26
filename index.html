@@ -1,40 +1,297 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/dracula.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>Front End</h3>
+          <p class="fragment">
+            <img
+              width="178"
+              height="238"
+              data-src="dist/images/html-1.svg"
+              alt="Down arrow" />
+            <img
+              width="178"
+              height="238"
+              data-src="dist/images/css-3.svg"
+              alt="Down arrow" />
+            <img
+              width="178"
+              height="238"
+              data-src="dist/images/javascript-1.svg"
+              alt="Down arrow" />
+          </p>
+          <p class="fragment" style="display: flex; justify-content: center">
+            <span style="width: 178px">HTML</span>
+            <span style="width: 178px">CSS</span>
+            <span style="width: 178px">Javascript</span>
+          </p>
+        </section>
+        <section>
+          <section>
+            <h3>Early days of web development</h3>
+            <ul>
+              <li>
+                Server-side scripting languages like Perl, PHP were used to
+                create dynamic web pages
+              </li>
+              <li class="fragment">
+                JavaScript was mostly used for simple scripts like form
+                validation
+              </li>
+              <li class="fragment">
+                Web developers had to test their websites on multiple browsers
+                and versions to ensure cross-browser compatibility.
+              </li>
+              <li class="fragment">
+                Debugging was mostly
+                <q>fly-by-the-seat-of-your-pants</q> approach
+                <div class="fragment fade-in">
+                  <small
+                    >rely on instinct rather than logic or knowledge.
+                  </small>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Loading CSS based on the broswer</h4>
+            <pre>
+              <code>
+                <head>
+                  <link href="all_browsers.css" rel="stylesheet" type="text/css">
+                  <!--[if IE]> <link href="ie_only.css" rel="stylesheet" type="text/css"> <![endif]-->
+                  <!--[if lt IE 7]> <link href="ie_6_and_below.css" rel="stylesheet" type="text/css"> <![endif]-->
+                  <!--[if !lt IE 7]> <![IGNORE[--><![IGNORE[]]> <link href="recent.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+                  <!--[if !IE]--> <link href="not_ie.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+                  </head>
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h4>The CSS ACID Test</h4>
+            <li>
+              The CSS Acid Test is a test suite that is used to determine a
+              browser's compliance with CSS (Cascading Style Sheets) standards
+            </li>
+            <img class="fragment" src="dist/images/acid2.gif" />
+          </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+          <section>
+            <h4>CSS Vendor Prefix</h4>
+            <pre>
+              <code  data-trim data-noescape>
+                /* Cross-browser css3 linear-gradient */
+                .linear-gradient {
+                /* Gecko browser (Firefox) */
+                background-image: -moz-linear-gradient(top, #D7D 0%, #068 100%);
+                /* Opera */
+                background-image: -o-linear-gradient(top, #D7D 0%, #068 100%);
+                /* older Webkit syntax */
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D7D), color-stop(1, #068));
+                /* Webkit (Safari, Chrome, iOS, Android) */
+                background-image: -webkit-linear-gradient(top, #D7D 0%, #068 100%);
+                /* W3C */
+                background-image: linear-gradient(to bottom, #D7D 0%, #068 100%);
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Javascript Bad Parts</h3>
+            <img class="fragment" src="dist/images/js-joke.png" height="600" />
+          </section>
+          <section>
+            <h3>Quiz Time</h3>
+            <pre>
+            <code data-trim data-noescape data-line-numbers="1-3|5|6|7|10 ">
+              let a = 10;
+              let b = "10";
+              let c = a + b; // ???
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+              Option A: Error
+              Option B: 20 
+              Option C: 1010
+            </code>
+           </pre>
+            <div class="fragment">Correct Answer: C</div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Precursor to modern web development</h3>
+            <ul>
+              <div>
+                <h5>AJAX</h5>
+                <small>
+                  <li>Asynchronous JavaScript and XML.</li>
+                  <li>
+                    Enabled update of web pages without the need for a full page
+                    reload
+                  </li>
+                </small>
+              </div>
+              <div class="fragment">
+                <h5>JSON</h5>
+                <small>
+                  <li>JavaScript Object Notation</li>
+                  <li>
+                    JSON is based on a subset of the JavaScript programming
+                    language
+                  </li>
+                  <li>
+                    Often used to transmit data between a server and a web
+                    application, as an alternative to XML
+                  </li>
+                </small>
+              </div>
+            </ul>
+          </section>
+          <section>
+            <h3>First Major Front-end Library</h3>
+            <ul>
+              <h6>jQuery</h6>
+              <li>
+                Provided a consistent API for interacting with the DOM,
+                regardless of the browser
+              </li>
+              <li>
+                Provided a unified event handling API that worked consistently
+                across all browsers
+              </li>
+              <li>
+                Provided a simple and consistent API for making AJAX requests
+              </li>
+              <li>
+                Provided a simple and easy-to-use API for animating elements on
+                a web page
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <h3>Client-side Javascript frameworks emerged</h3>
+              <li>Introduction of MVC pattern to the front end</li>
+              <li>
+                Provided seperation of business logic from presentation logic
+              </li>
+              <li>
+                Popular frameworks backbone.js, ember.js, vue.js, angular.js
+              </li>
+              <li>
+                Templating libraries emerged proving capabilites such as
+                conditional rendering, looping, and partials
+              </li>
+              <li>Popular templating libraries Handlebars.js, Mustache.js</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <ul>
+            <h3>Modern Front End Development</h3>
+            <li>Singe Page Applications becoming popular</li>
+            <li>
+              Front End tooling ecosystem emerged with popularity of Node.Js and
+              npm
+              <blockquote>
+                <li>
+                  Linting (<a target="_blank" href="https://eslint.org/play/"
+                    >eslint</a
+                  >)
+                </li>
+                <li>
+                  Transpiling (<a
+                    target="_blank"
+                    href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-3&prettier=false&targets=&version=7.21.2&externalPlugins=&assumptions=%7B%7D"
+                    >Babel.js</a
+                  >,
+                  <a target="_blank" href="https://postcss.org/">post-css</a>)
+                </li>
+                <li>
+                  Bundling (<a href="https://webpack.js.org/" target="_blank"
+                    >webpack</a
+                  >, <a href="https://vitejs.dev/" target="_blank">vite.js</a>)
+                </li>
+                <li>
+                  Minifying (<a
+                    href="https://lisperator.net/uglifyjs/"
+                    target="_blank"
+                    >uglify-js</a
+                  >,
+                  <a target="_blank" href="https://try.terser.org/">Terser</a>)
+                </li>
+                <li>Packaging (npm, pnpm, yarn)</li>
+              </blockquote>
+            </li>
+            <li>Popular libraries React.js, Vue.js, Svelte, Angular.js</li>
+          </ul>
+        </section>
+        <section>
+          <img src="dist/images/br_traditional_2.gif" />
+        </section>
+        <section>
+          <img src="dist/images/br_singlepage_application_2.gif" />
+        </section>
+        <section>React.js</section>
+        <section>
+          <h4>Getting Started</h4>
+          <ul>
+            <li>
+              Installing <a href="https://nodejs.org/en/download/">node.js</a>
+            </li>
+            <li>
+              Installing <a href="https://code.visualstudio.com/">vscode</a>
+            </li>
+            <li>
+              Setting up your first react.js app
+              <blockquote>
+                npm create vite@latest my-react-app --template react
+              </blockquote>
+            </li>
+          </ul>
+        </section>
+        <section>
+          Lets build our first
+          <a
+            target="_blank"
+            href="https://stackblitz.com/edit/vitejs-vite-zvg2xt?file=index.html&terminal=dev">
+            React App</a
+          >
+        </section>
+        <section>Questions</section>
+        <section>Thankyou</section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
