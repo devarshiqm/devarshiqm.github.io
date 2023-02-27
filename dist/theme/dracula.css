@@ -27,14 +27,13 @@ section.has-light-background h6 {
  *********************************************/
 :root {
   --r-background-color: #282a36;
-  --r-main-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
-  --r-main-font-size: 24px;
+  --r-main-font: avenir next, avenir, segoe ui, helvetica neue, helvetica,
+    Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --r-main-font-size: 30px;
   --r-main-color: #f8f8f2;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: League Gothic, Impact, sans-serif;
+  --r-heading-font: avenir next, Impact, sans-serif;
   --r-heading-color: #bd93f9;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
@@ -103,6 +102,7 @@ section.has-light-background h6 {
   text-transform: var(--r-heading-text-transform);
   text-shadow: var(--r-heading-text-shadow);
   word-wrap: break-word;
+  font-weight: 600;
 }
 
 .reveal h1 {

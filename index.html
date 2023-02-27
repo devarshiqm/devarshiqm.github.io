@@ -19,11 +19,11 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h3>Introduction to the Front End</h3>
+          <h3>Introduction to Front End</h3>
         </section>
         <section>
-          <h3>The Team</h3>
           <ul>
+            <h3>The Team</h3>
             <li>Alexey Rechkunov</li>
             <li>Aravind Raja</li>
             <li>Brijesh Babariya</li>
@@ -61,8 +61,8 @@
         </section>
         <section>
           <section>
-            <h3>Early days of web development</h3>
             <ul>
+              <h3>Early days of web development</h3>
               <li>
                 Server-side scripting languages like Perl, PHP were used to
                 create dynamic web pages
@@ -87,7 +87,7 @@
             </ul>
           </section>
           <section>
-            <h4>Loading CSS based on the broswer</h4>
+            <h3>Loading CSS based on the broswer</h3>
             <pre>
               <code>
                 <head>
@@ -101,8 +101,8 @@
             </pre>
           </section>
           <section>
-            <h4>The CSS ACID Test</h4>
             <ul>
+              <h3>The CSS ACID Test</h3>
               <li>
                 The CSS Acid Test is a test suite that is used to determine a
                 browser's compliance with CSS (Cascading Style Sheets) standards
@@ -112,7 +112,7 @@
           </section>
 
           <section>
-            <h4>CSS Vendor Prefix</h4>
+            <h3>CSS Vendor Prefix</h3>
             <pre>
               <code  data-trim data-noescape>
                 /* Cross-browser css3 linear-gradient */
@@ -168,10 +168,10 @@
         </section>
         <section>
           <section>
-            <h3>Precursor to modern web development</h3>
             <ul>
+              <h3>Precursor to modern web development</h3>
               <div>
-                <h5>AJAX</h5>
+                <h6>AJAX</h6>
                 <small>
                   <li>Asynchronous JavaScript and XML.</li>
                   <li>
@@ -180,8 +180,9 @@
                   </li>
                 </small>
               </div>
+              <br />
               <div class="fragment">
-                <h5>JSON</h5>
+                <h6>JSON</h6>
                 <small>
                   <li>JavaScript Object Notation</li>
                   <li>
@@ -197,8 +198,9 @@
             </ul>
           </section>
           <section>
-            <h3>First Major Front-end Library</h3>
             <ul>
+              <h3>First Major Front-end Library</h3>
+              <br />
               <h6>jQuery</h6>
               <li>
                 Provided a consistent API for interacting with the DOM,
@@ -240,58 +242,62 @@
           </section>
         </section>
         <section>
-          <ul>
-            <h3>Modern Front End Development</h3>
-            <li>Singe Page Applications becoming popular</li>
-            <li>
-              Front End tooling ecosystem emerged with popularity of Node.Js and
-              npm
-              <blockquote>
-                <li>
-                  Linting (<a target="_blank" href="https://eslint.org/play/"
-                    >eslint</a
-                  >)
-                </li>
-                <li>
-                  Transpiling (<a
-                    target="_blank"
-                    href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-3&prettier=false&targets=&version=7.21.2&externalPlugins=&assumptions=%7B%7D"
-                    >Babel.js</a
-                  >,
-                  <a target="_blank" href="https://postcss.org/">post-css</a>)
-                </li>
-                <li>
-                  Bundling (<a href="https://webpack.js.org/" target="_blank"
-                    >webpack</a
-                  >, <a href="https://vitejs.dev/" target="_blank">vite.js</a>)
-                </li>
-                <li>
-                  Minifying (<a
-                    href="https://lisperator.net/uglifyjs/"
-                    target="_blank"
-                    >uglify-js</a
-                  >,
-                  <a target="_blank" href="https://try.terser.org/">Terser</a>)
-                </li>
-                <li>Packaging (npm, pnpm, yarn)</li>
-              </blockquote>
-            </li>
-            <li>Popular libraries React.js, Vue.js, Svelte, Angular.js</li>
-          </ul>
+          <section>
+            <ul>
+              <h3>Modern Front End Development</h3>
+              <li>Singe Page Applications becoming popular</li>
+              <li>
+                Front End tooling ecosystem emerged with popularity of Node.Js
+                <blockquote>
+                  <li>
+                    Linting (<a target="_blank" href="https://eslint.org/play/"
+                      >eslint</a
+                    >)
+                  </li>
+                  <li>
+                    Transpiling (<a
+                      target="_blank"
+                      href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-3&prettier=false&targets=&version=7.21.2&externalPlugins=&assumptions=%7B%7D"
+                      >Babel.js</a
+                    >,
+                    <a target="_blank" href="https://postcss.org/">post-css</a>)
+                  </li>
+                  <li>
+                    Bundling (<a href="https://webpack.js.org/" target="_blank"
+                      >webpack</a
+                    >,
+                    <a href="https://vitejs.dev/" target="_blank">vite.js</a>)
+                  </li>
+                  <li>
+                    Minifying (<a
+                      href="https://lisperator.net/uglifyjs/"
+                      target="_blank"
+                      >uglify-js</a
+                    >,
+                    <a target="_blank" href="https://try.terser.org/">Terser</a
+                    >)
+                  </li>
+                  <li>Packaging (npm, pnpm, yarn)</li>
+                </blockquote>
+              </li>
+              <li>Popular libraries React.js, Vue.js, Svelte, Angular.js</li>
+            </ul>
+          </section>
+          <section>
+            <img src="dist/images/br_traditional_2.gif" />
+          </section>
+          <section>
+            <img src="dist/images/br_singlepage_application_2.gif" />
+          </section>
         </section>
         <section>
-          <img src="dist/images/br_traditional_2.gif" />
-        </section>
-        <section>
-          <img src="dist/images/br_singlepage_application_2.gif" />
-        </section>
-        <section>
-          <h3>React.js</h3>
-          Lets understand what is a component
-        </section>
-        <section data-auto-animate>
-          <pre
-            data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+          <section>
+            <h3>React.js</h3>
+            Lets understand what is a component
+          </section>
+          <section data-auto-animate>
+            <pre
+              data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
 						import * as React from 'react';
 
 						function Example() {
@@ -303,10 +309,10 @@
 					</code>
         
         </pre>
-        </section>
-        <section data-auto-animate>
-          <pre
-            data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+          </section>
+          <section data-auto-animate>
+            <pre
+              data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
               import * as React from 'react';
 
               function Example(props) {
@@ -319,10 +325,10 @@
               React.render(< Example name="React World!" />, 
               document.getElementById('root'))
 					</code></pre>
-        </section>
-        <section data-auto-animate>
-          <pre
-            data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+          </section>
+          <section data-auto-animate>
+            <pre
+              data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
               import * as React from 'react';
 
               function Example() {
@@ -339,39 +345,58 @@
               React.render(< Example  />, 
               document.getElementById('root'))
 					</code></pre>
+          </section>
+          <section>
+            <ul>
+              <h3>React Properties</h3>
+              <li>React enables developers to write declarative UI</li>
+              <li>
+                React is built around the concept of reusable components, which
+                are small, self-contained UI elements.
+              </li>
+              <li>
+                Components can be composed together to create complex UIs and
+                changes to one component will not affect the others
+              </li>
+              <li>
+                React is highly customizable allowing developers to allows
+                developers to extend the library to suit their needs
+              </li>
+              <li>React supports server side rendering, crucial for SEO</li>
+              <li>
+                React is highly unopinionated, so manging application state,
+                server state, routing etc is left to the developers
+              </li>
+            </ul>
+          </section>
         </section>
         <section>
-          <h3>React 5 Pointers</h3>
-          <ul>
-            <li>
-              React enables developers to write declarative UI: This means that
-              developers can describe the desired UI state and React takes care
-              of updating the DOM to match
-            </li>
-            <li>
-              React is built around the concept of reusable components, which
-              are small, self-contained UI elements. Components can be composed
-              together to create complex UIs and changes to one component will
-              not affect the others
-            </li>
-            <li>
-              React is highly customizable allowing developers to allows
-              developers to extend the library to suit their needs
-            </li>
-            <li>React supports server side rendering, crucial for SEO</li>
-            <li>
-              React is highly unopinionated, so manging application state,
-              server state, routing etc is left to the developers
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>Breaking application into components</h3>
-          <img src="dist/images/report.png" height="600" />
-        </section>
-        <section>
-          <h3>Breaking application into components</h3>
-          <img src="dist/images/reportC.png" height="600" />
+          <section>
+            <ul>
+              <h3>How Web Apps are built at IQM</h3>
+              <li>Design Team creates design and protoype in Figma</li>
+              <li>
+                Design Audit and Implementation feasiblity is ensured by the UI
+                Team
+              </li>
+              <li>Indentifying new components within the design</li>
+              <li>
+                Required component is created as per the design specification
+                and added to IQM Components Library - @applift
+              </li>
+              <li>UI Implementation of the figma design</li>
+              <li>Behaviour Implementation of the application</li>
+              <li>Testing Behaviour with the specifications (Dev-Testing)</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Breaking application into components</h3>
+            <img src="dist/images/report.png" />
+          </section>
+          <section>
+            <h3>Breaking application into components</h3>
+            <img src="dist/images/reportC.png" />
+          </section>
         </section>
 
         <section>
@@ -391,7 +416,8 @@
             </li>
           </ul>
         </section>
-
+        <section>Questions❓</section>
+        <section>Thankyou 🎉</section>
         <section>
           Lets build our first SPA
           <a
@@ -400,8 +426,6 @@
             React App</a
           >
         </section>
-        <section>Questions</section>
-        <section>Thankyou</section>
       </div>
     </div>
     <script src="dist/reveal.js"></script>
